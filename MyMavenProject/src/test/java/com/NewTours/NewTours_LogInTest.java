@@ -1,0 +1,71 @@
+package com.NewTours;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewTours_LogInTest 
+{
+
+	FirefoxDriver driver;
+	
+	@BeforeTest
+	public void setUp()
+	{
+		driver = new FirefoxDriver();
+		driver.get("http://newtours.demoaut.com");
+	}
+	
+	
+	@Test
+	public void logIn()
+	{
+		// <input type="text" size="10" name="userName">
+		
+				driver.findElement(By.name("userName")).sendKeys("tutorial");
+				
+				// <input type="password" size="10" name="password">
+				
+				driver.findElementByName("password").sendKeys("tutorial");
+				
+				// <input width="58" type="image" border="0" height="17" alt="Sign-In"
+				// src="/images/btn_signin.gif?osCsid=bcc8e573014c0b67f61d64efa132ab5a" value="Login" name="login">
+				
+				driver.findElementByName("login").click();
+				
+				String expected_Title="Find";
+				System.out.println(" the Expected title is : "+expected_Title);
+				
+				String acutal_Title=driver.getTitle();
+				System.out.println(" the actual title is : "+ acutal_Title);
+				
+				
+			/*	if(acutal_Title.contains(expected_Title))
+				{
+					System.out.println(" LogIn Successfull - PASS");
+				}
+				else
+				{
+					System.out.println(" LogIn Failed - FAIL");
+				}*/
+				
+				
+				//Assert.assertEquals(acutal_Title, expected_Title);
+				
+				assertTrue(acutal_Title.contains(expected_Title)," The title not matched - FAIL");
+				
+
+	}
+	
+	@AfterTest
+	public void tearDown()
+	{
+		driver.quit();
+	}
+	
+}

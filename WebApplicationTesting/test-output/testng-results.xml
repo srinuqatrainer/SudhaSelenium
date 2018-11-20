@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NewTours Application" duration-ms="72076" started-at="2018-11-20T00:57:15Z" finished-at="2018-11-20T00:58:27Z">
+    <groups>
+    </groups>
+    <test name="NewUserRegistation" duration-ms="62885" started-at="2018-11-20T00:57:15Z" finished-at="2018-11-20T00:58:17Z">
+      <class name="com.DataDriven.NewTours_NewUserRegistration_TestData">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@2a2d45ba]" name="setUp" is-config="true" duration-ms="35163" started-at="2018-11-20T06:27:15Z" finished-at="2018-11-20T06:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="register()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@2a2d45ba]" name="register" duration-ms="1138" started-at="2018-11-20T06:27:50Z" finished-at="2018-11-20T06:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="userRegistration()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@2a2d45ba]" name="userRegistration" duration-ms="25511" started-at="2018-11-20T06:27:51Z" finished-at="2018-11-20T06:28:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@2a2d45ba]" name="tearDown" is-config="true" duration-ms="1049" started-at="2018-11-20T06:28:16Z" finished-at="2018-11-20T06:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.DataDriven.NewTours_NewUserRegistration_TestData -->
+    </test> <!-- NewUserRegistation -->
+    <test name="LogInTest" duration-ms="72076" started-at="2018-11-20T00:57:15Z" finished-at="2018-11-20T00:58:27Z">
+      <class name="com.Hybrid.NewTours_LogInTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Hybrid.NewTours_LogInTest@215be6bb]" name="setUp" is-config="true" duration-ms="16665" started-at="2018-11-20T06:27:15Z" finished-at="2018-11-20T06:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logIn()[pri:0, instance:com.Hybrid.NewTours_LogInTest@215be6bb]" name="logIn" duration-ms="53181" started-at="2018-11-20T06:27:31Z" finished-at="2018-11-20T06:28:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Hybrid.NewTours_LogInTest@215be6bb]" name="tearDown" is-config="true" duration-ms="2156" started-at="2018-11-20T06:28:25Z" finished-at="2018-11-20T06:28:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Hybrid.NewTours_LogInTest -->
+    </test> <!-- LogInTest -->
+  </suite> <!-- NewTours Application -->
+</testng-results>

@@ -1,0 +1,24 @@
+package com.POM;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class WelComeMercuryTours
+{
+	// <a href="mercurysignon.php">SIGN-ON</a>
+	
+	//WebElement signOn=driver.findElement(By.linkText("SIGN-ON"));
+	//signOn.click();
+	
+	// identifying the element
+	@FindBy(linkText="SIGN-ON")
+	WebElement signOn;
+	
+	// Operation done on Element
+	public void signon()
+	{
+		signOn.click();
+	}
+
+}
